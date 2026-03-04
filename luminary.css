@@ -1,0 +1,601 @@
+/*
+Welcome to Mercury!
+An American Space-Age Inspired CSS Library!
+*/
+
+@font-face {
+    font-family: Fira_Code;
+    src: url("./Fira_Code/FiraCode-VariableFont_wght.ttf");
+
+    /*
+    Credit goes to tonsky on GitHub for creating the Fira Code font.
+    https://github.com/tonsky/FiraCode
+
+    This font is used in accordance to the Open Font License
+    ./Fira_Code/OFL.text
+    */
+}
+@font-face {
+    font-family: Open_Sans;
+    src: url("https://fonts.borgcreative.com/Open_Sans/OpenSans-VariableFont_wdthwght.ttf");
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url("https://fonts.borgcreative.com/merriweather/Merriweather-RXwe.ttf");
+
+}
+
+@font-face {
+    font-family: Mechanical;
+    src: url("https://fonts.borgcreative.com/mechanical-font/Mechanical-g5Y5.otf");
+
+}
+
+@font-face {
+    font-family: OpenDyslexic;
+    src: url("https://fonts.borgcreative.com/OpenDyslexic/OpenDyslexic-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url("https://fonts.borgcreative.com/Oswald/Oswald-VariableFont_wght.ttf");
+
+}
+
+
+
+
+
+@property --mercury {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #F6F9FD;
+    /*F6F9FD*/
+    /*var(--buzz)*/
+}
+
+@property --luminary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #243743;
+    /*243743*/
+}
+
+@property --comanche {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #F05126;
+    /*F05126*/
+}
+
+@property --neil {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #758ECD;
+    /*758ECD*/
+}
+
+@property --buzz {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #E0FF4F;
+    /*E0FF4F*/
+}
+
+
+#mercury {
+    color: var(--mercury);
+    border-color: var(--mercury);
+}
+
+#luminary {
+    color: var(--luminary);
+}
+
+#mercury-glow {
+    box-shadow: 0px 0px 10px var(--mercury);
+}
+
+#comanche {
+    color: var(--comanche);
+    border-color: var(--comanche);
+}
+
+#comanche-glow {
+    box-shadow: 0px 0px 10px var(--comanche);
+}
+
+#neil {
+    color: var(--neil);
+    border-color: var(--neil);
+}
+
+#neil-glow {
+    box-shadow: 0px 0px 10px var(--neil);
+}
+
+#buzz {
+    color: var(--buzz);
+    border-color: var(--buzz);
+}
+
+#buzz-glow {
+    box-shadow: 0px 0px 10px var(--buzz);
+}
+
+
+/*Global*/
+html {
+    font-family: Fira_Code;
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: var(--luminary);
+    color: var(--mercury);
+    margin: 15px;
+}
+
+button {
+    font-family: Fira_Code;
+}
+
+a {
+    font-family: Fira_Code;
+}
+
+.img img {
+    max-width: 50%;
+    margin: 15px;
+    border-style: solid;
+    border-color: var(--mercury);
+    border-width: 1px;
+}
+
+/*containers*/
+
+.grid-container {
+    display: grid;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+/*Nav*/
+
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: var(--mercury);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.nav-alt ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: var(--luminary);
+    border-width: 1px;
+    border-style: solid;
+    background-color: var(--mercury);
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav-alt ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: block;
+    color: var(--mercury);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-alt ul li a {
+    display: block;
+    color: var(--luminary);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    background-color: var(--mercury);
+    color: var(--luminary);
+}
+
+.nav-alt ul li a:hover {
+    background-color: var(--luminary);
+    color: var(--mercury);
+}
+
+.nbus:hover {
+    cursor: pointer;
+}
+
+/*Cards*/
+.card {
+    margin: 15px;
+    border-style: solid;
+    border-color: var(--mercury);
+    border-width: 1px;
+}
+
+.card-alt {
+    margin: 15px;
+    border-style: solid;
+    border-color: var(--luminary);
+    border-width: 1px;
+}
+
+.card p {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.card-body h1,
+.card-body h2,
+.card-body h3,
+.card-body h4,
+.card-body h5,
+.card-body h6 {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+}
+
+.card-body {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+.card-heading {
+    background-color: var(--mercury);
+    color: var(--luminary);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+
+.card-heading h1,
+.card-heading h2,
+.card-heading h3,
+.card-heading h4,
+.card-heading h5,
+.card-heading h6 {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+/*Buttons*/
+
+.abus {
+    color: var(--mercury);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--mercury);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 0.5;
+
+
+}
+
+.abus:hover {
+
+    color: var(--mercury);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--mercury);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.obus {
+    color: var(--comanche);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--comanche);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 0.5;
+
+}
+
+.obus:hover {
+
+    color: var(--comanche);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--comanche);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.bbus {
+    color: var(--neil);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--neil);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 0.5;
+
+}
+
+.bbus:hover {
+
+    color: var(--neil);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--neil);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.gbus {
+    color: var(--buzz);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--buzz);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 0.5;
+
+}
+
+.gbus:hover {
+
+    color: var(--buzz);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--buzz);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.topbus {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: var(--mercury);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--mercury);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 0.5;
+}
+
+.topbus:hover {
+
+    color: var(--mercury);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--mercury);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+/*Table*/
+
+table {
+
+    border-collapse: collapse;
+}
+
+td {
+    color: var(--mercury);
+    border-bottom: 1px solid var(--mercury);
+    text-align: left;
+}
+
+tr:hover {
+    background-color: var(--neil);
+}
+
+th {
+    background-color: var(--mercury);
+    color: var(--luminary);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    margin: 0px;
+}
+
+/*Inputs*/
+.text-input {
+    font-family: Fira_Code;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--mercury);
+    border-style: solid;
+    border-color: var(--mercury);
+    border-width: 1px;
+    background-color: var(--luminary);
+}
+
+.text-input-alt {
+    font-family: Fira_Code;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--luminary);
+    border-style: solid;
+    border-color: var(--luminary);
+    border-width: 1px;
+    background-color: var(--mercury);
+}
+
+
+
+/*misc*/
+.synapses {
+    border-style: solid;
+    border-color: var(--mercury);
+    color: var(--mercury);
+    border-width: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding:10px;
+    background-color: var(--luminary);
+}
+
+.synapses:hover {
+    border-style: solid;
+    color: var(--luminary);
+    border-color: var(--mercury);
+    border-width: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding:10px;
+    background-color: var(--mercury);
+}
+
+.synapseheading {
+    background-color: var(--mercury);
+    color: var(--luminary);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    width: max-content;
+}
+
+
+.si {
+    color: var(--mercury);
+    border-bottom: 1px solid var(--mercury);
+    text-align: left;
+    text-decoration: none;
+}
+
+.si:hover {
+    background-color: var(--neil);
+}
+
+ul {
+    list-style: none;
+}
+
+
+.divider {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    opacity: 0.5;
+    color: var(--mercury);
+    text-align: center;
+    cursor: default;
+}
+
+.border {
+    margin: 15px;
+    border-style: solid;
+    border-color: var(--mercury);
+    border-width: 1px;
+}
+
+.border-alt {
+    margin: 15px;
+    border-style: solid;
+    border-color: var(--luminary);
+    border-width: 1px;
+}
+
+.a {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: var(--mercury);
+}
+
+.a:hover {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: var(--neil);
+}
+
+.a-alt {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: var(--luminary);
+}
+
+.a-alt:hover {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: var(--neil);
+}
+
+.a-comanche {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: var(--comanche);
+}
+
+.a-comanche:hover {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: #d37257;
+}
+
+
+
+.cols-3 {
+    column-count: 3;
+}
+
+.pdo-1 {
+    filter: blur(0.1px);
+}
+
+.pdo-2 {
+    filter: blur(0.2px);
+}
+
+.pdo-3 {
+    filter: blur(0.3px);
+}
+
+/*
+@keyframes textflicker {
+    from {
+      text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to {
+      text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
+  }
+  */

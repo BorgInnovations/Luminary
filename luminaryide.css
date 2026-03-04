@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Fira_Code;
+    src: url("./Fira_Code/FiraCode-VariableFont_wght.ttf");
+
+    /*
+    Credit goes to tonsky on GitHub for creating the Fira Code font.
+    https://github.com/tonsky/FiraCode
+
+    This font is used in accordance to the Open Font License
+    ./Fira_Code/OFL.text
+    */
+}
+@property --mercury {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #F6F9FD;
+    /*F6F9FD*/
+    /*var(--buzz)*/
+}
+
+@property --luminary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #243743;
+    /*243743*/
+}
+
+@property --comanche {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #F05126;
+    /*F05126*/
+}
+
+@property --neil {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #758ECD;
+    /*758ECD*/
+}
+
+@property --buzz {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #E0FF4F;
+    /*E0FF4F*/
+}
+
+
+
+.ide {
+    column-count: 2;
+    margin-top: 15px;
+
+}
+
+.container-editor{
+    column-width: 25%;
+    display: flex;
+    margin-top: 15px;
+}
+
+.container-viewport{
+    column-width: 75%;
+    display: flex;
+    margin-top: 15px;
+    background-color: #fff;
+    color: black;
+}
+
+#textEditor{
+    font-family: Fira_Code;
+    background-color: black;
+    color: #758ECD;
+
+}
+

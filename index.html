@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luminary IDE</title>
+    
+        <meta name="theme-color" content="#fff">
+        <meta property="og:image" content="">
+        <meta name="twitter:image" content="">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Luminary IDE">
+        <meta property="og:type" content="website">
+        <meta name="description" content="*Not an AI company">
+        <meta name="twitter:description" content="*Not an AI company">
+    
+        <script src="./authordev/js/FileSaver.js"></script>
+        <link rel="shortcut icon" href="./img/icons/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./luminary.css">
+        <link rel="stylesheet" href="./luminaryide.css">
+        <script src="./luminary.js"></script>
+        <script src="./menu.js"></script>
+
+        <script src="./source/luminaryide.js"></script>
+    
+        <!-- Cronitor RUM -->
+        <!--
+        <script async src="https://rum.cronitor.io/script.js"></script>
+        <script>
+            window.cronitor = window.cronitor || function () { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+            cronitor('config', { clientKey: '1af84f6e29e2a2dd59b116c33da3b996' });
+        </script>
+        <script src="https://cdn.counter.dev/script.js" data-id="49ff21d8-7cbe-4f83-b436-97b778216657" data-utcoffset="-7"></script>
+    -->
+    </head>
+
+<header>
+    <a name="#top" hidden></a>
+    <div class="nav" id="topMenu">
+
+    </div>
+    <section style="display: none;" id="contact">
+
+        <div class="card">
+            <div class="card-heading">
+                <h1>Contact.</h1>
+            </div>
+            <div class="card-body">
+                        <iframe data-tally-src="https://tally.so/embed/nGW48Z?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="476" frameborder="0" marginheight="0" marginwidth="0" title="Contact"></iframe>
+
+                        <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>                </iframe>
+            </div>
+        </div>
+    </section>
+    <section style="display: none;" id="products">
+    </section>
+
+
+
+
+</header>
+
+<body onload="topMenu_load(), footMenu_load()">
+    
+
+    <section class="ide">
+
+        <section id="editor" >
+
+            <div class="container-editor">
+                <div>
+                        <textarea onkeyup="insertBody();" name="" id="textEditor" cols="50" rows="15" width="100%" placeholder='Say "Hello World!"'></textarea>
+                
+                    <p> <button id="insert" onclick="saveFile()" class="abus">Download</button> </p>
+
+                </div>
+            </div>
+            
+
+        </section>
+
+        <section id="viewport" contenteditable="true" onkeyup="updateBody();">
+            <div class="container-viewport card">
+                <p><div id="ide-menu">
+
+                </div></p>
+                <p><div id="ide-body">
+
+                </div></p>
+                <p><div id="ide-footer">
+
+                </div></p>
+            </div>
+        </section>
+
+    </section>
+
+
+
+</body>
+
+<footer id="footMenu">
+
+</footer>
+<!--Ephesians 5:11-->
+<!--Have nothing to do with the fruitless deeds of darkness, but rather expose them.-->
+
+<!--John 3:16-->
+<!--For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.-->
+
+</html>
