@@ -70,8 +70,10 @@
 
             <div class="container-editor">
                 <div>
-                        <textarea onkeyup="insertBody();" name="" id="textEditor" cols="50" rows="15" width="100%" placeholder='Say "Hello World!"'></textarea>
-                
+                        <textarea onkeyup="insertBody();" class="textEditor" name="" id="textEditor" cols="50" rows="15" width="100%" placeholder='Say "Hello World!"'></textarea>
+
+                        <!--<textarea onkeyup="updateCSS()" class="textEditor" name="" id="cssEditor" cols="50" rows="15" width="100%" placeholder='Padding, margins, and text styles oh my!'></textarea>-->
+
                     <p> <button id="insert" onclick="saveFile()" class="abus">Download</button> </p>
 
                 </div>
@@ -79,6 +81,7 @@
             
 
         </section>
+
 
         <section id="viewport" contenteditable="true" onkeyup="updateBody();">
             <div class="container-viewport card">

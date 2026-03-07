@@ -68,7 +68,7 @@
     color: black;
 }
 
-#textEditor{
+.textEditor{
     font-family: Fira_Code;
     background-color: black;
     color: #758ECD;

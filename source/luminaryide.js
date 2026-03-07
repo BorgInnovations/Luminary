@@ -38,5 +38,12 @@ function updateBody(){
     document.getElementById("textEditor").value = bodyContent
     
     
+}
 
+function updateCSS(){
+    var html = document.getElementById("ide-body").innerHTML 
+    var css = document.getElementById("cssEditor").value
+
+    document.getElementById("ide-body").value = '<style>'+css+'</style>'+html
+    
 }
