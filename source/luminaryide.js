@@ -119,7 +119,10 @@ document.getElementById("textEditor").value =
    function updateBody(){
        var bodyContent = document.getElementById("ide-body").innerHTML
        document.getElementById("textEditor").value = bodyContent
-       
-       
+
+   }
    
+   function versionID(){
+     cv = 'Alpha 1.1.1'
+     document.getElementById("versionID").innerHTML = cv
    }

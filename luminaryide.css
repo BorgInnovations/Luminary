@@ -54,10 +54,30 @@
 
 }
 
+.m-ide{
+    text-align: left;
+    margin: auto;
+    width: 95%; 
+    margin: 15px auto; 
+    display: block;
+    justify-content: center;
+}
+
 .container-editor{
     column-width: 25%;
     display: flex;
     margin-top: 15px;
+    
+    
+}
+
+.m-container-editor{
+    column-width: 25%;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+
+    
 }
 
 .container-viewport{
@@ -68,10 +88,18 @@
     color: black;
 }
 
-.textEditor{
+#textEditor{
     font-family: Fira_Code;
     background-color: black;
     color: #758ECD;
+    text-align: left;
+    width: 95%; 
+    margin: 0 auto; 
+    display: block;
 
 }
 
+
+.m-textEditor{
+
+}

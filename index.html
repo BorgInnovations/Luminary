@@ -40,6 +40,13 @@
     <div class="nav" id="topMenu">
 
     </div>
+
+    <div class="nav">
+        
+    </div>
+
+    
+
     <section style="display: none;" id="contact">
 
         <div class="card">
@@ -56,32 +63,35 @@
     <section style="display: none;" id="products">
     </section>
 
+    <section style="display: none;" id="luminaryMenu">
+    </section>
 
 
 
+    
 </header>
 
-<body onload="topMenu_load(), footMenu_load()">
+<body onload="topMenu_load(), footMenu_load(), loadEditor(), insertBody(), versionID()">
     
 
-    <section class="ide">
+    <section class="m-ide card">
+        <div class="card-heading">
+            <h1> <span id="versionID"></span></h1>
+        </div>
 
-        <section id="editor" >
+        <section id="editor">
 
-            <div class="container-editor">
+            <div class="m-container-editor">
                 <div>
-                        <textarea onkeyup="insertBody();" class="textEditor" name="" id="textEditor" cols="50" rows="15" width="100%" placeholder='Say "Hello World!"'></textarea>
+                        <textarea onkeyup="insertBody();" name="" id="textEditor" cols="50" rows="15" width="100%" placeholder='Say "Hello World!"'></textarea>
 
-                        <!--<textarea onkeyup="updateCSS()" class="textEditor" name="" id="cssEditor" cols="50" rows="15" width="100%" placeholder='Padding, margins, and text styles oh my!'></textarea>-->
 
-                    <p> <button id="insert" onclick="saveFile()" class="abus">Download</button> </p>
-
+                        
                 </div>
             </div>
             
 
         </section>
-
 
         <section id="viewport" contenteditable="true" onkeyup="updateBody();">
             <div class="container-viewport card">
@@ -95,6 +105,8 @@
 
                 </div></p>
             </div>
+            
+
         </section>
 
     </section>
