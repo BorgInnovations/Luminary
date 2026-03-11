@@ -1,6 +1,6 @@
 
 function topMenu_load() {
-  document.getElementById("topMenu").innerHTML = '<ul><li><a href="https://borginnovations.com" target="_blank">B0RG</a></li><li><a class="nbus" onclick="showproducts()">Projects</a></li><li><a class="nbus" onclick="openL()">File</a></li><li><a class="nbus" onclick="showcontact()">Contact</a></li></ul>'
+  document.getElementById("topMenu").innerHTML = '<ul><li><a href="https://borginnovations.com" target="_blank">B0RG</a></li><li><a class="nbus" onclick="showproducts()">Projects</a></li><li><a class="nbus" onclick="openL()">File</a></li><li><a class="nbus" onclick="openSnippets()">Snippets</a></li><li><a class="nbus" onclick="showcontact()">Contact</a></li></ul>'
   document.getElementById('products').innerHTML = '<div class="card"><div class="card-heading"><h1>Projects.</h1> </div><div class="card-body"><div><h3>C0RT3X 01</h3><p>A human-centric research platform.</p><p><a href="https://borginnovations.com/c0rt3x.html"><button class="abus">Learn More</button></a></p><h3>Project Luminary</h3><p>Revisitng modern code standards.</p><p><a href="https://luminary.borginnovations.com"><button class="abus">Learn More</button></a></p><h3>Author</h3><p>A focused writing space.</p><p><a href="https://borginnovations.com/author.html"><button class="abus">Learn More</button></a></p>                <h3>Buy Me a Coffee</h3>  <p>Fighting the AI-slop is not free.</p> <p><a href="https://buymeacoffee.com/jborg_arts" target="_BLANK"><button class="obus" >Buy Me a Coffee</button></a></p></div></div></div>'
   console.log('Top menu factor loaded')
 }
@@ -23,6 +23,18 @@ function loadContact() {
 function openL() {
 
   var x = document.getElementById("luminaryMenu");
+  if (x.style.display === "none") {
+     x.style.display = "block";
+
+  } else {
+     x.style.display = "none";
+
+  }
+}
+
+function openSnippets() {
+
+  var x = document.getElementById("snippets");
   if (x.style.display === "none") {
      x.style.display = "block";
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luminary Snippet Search</title>
+
+  <!--remote files-->
+  <script src="./source/snippets.js"></script>
+  <link rel="stylesheet" href="./luminary.css">
+  <script src="./luminary.js"></script>
+  <script src="./menu.js"></script>
+</head>
+
+<body onload="searching()" style="padding: 15px;">
+
+  <section>
+
+    <div class="con1" style="background-image: url(./media/network2.jpg);background-position: center;">
+      <p style="padding:0mm;"></p>
+
+      <div>
+
+
+
+        <center style=""><input id="searchBox"
+            style="width:50%; max-width: 500px; min-width: 125px; text-align: center;" class="text-input" type="text"
+            id="search_var" onkeydown="performSearch()" onkeyup="performSearch()"
+            placeholder="* * * search snippets * * *"><button hidden id="searchButt" style="margin-left: 5%;"
+            onclick="searched()" class="buttonX_green" name="button">Search</button>
+        </center>
+        <div id="results"></div>
+
+      </div>
+
+
+
+
+
+      <a href="#" style="visibility: hidden;" id="topbutton" class="topbutton" hidden>Top</a>
+
+  </section>
+
+</body>
+
+</html>
