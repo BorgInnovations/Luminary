@@ -21,7 +21,7 @@ function loadContact() {
 }
 
 function openL() {
-  document.getElementById("luminaryMenu").innerHTML = '<div class="card"><div class="card-heading"><h1>File.</h1> </div><div class="card-body"><div><h3> <a class="a" onclick="idbClear()">Delete Project</a> </h3><h3> <a class="a" onclick="saveFile()">Download Project</a> </h3></div></div></div>';
+  document.getElementById("luminaryMenu").innerHTML = '<div class="card"><div class="card-heading"><h1>File.</h1> </div><div class="card-body"><div><h3> <a class="a" onclick="idbClear(),updateLFile()">Delete Project</a> </h3><h3> <a class="a" onclick="saveFile()">Download Project</a> </h3></div></div></div>';
   var x = document.getElementById("luminaryMenu");
   if (x.style.display === "none") {
      x.style.display = "block";
