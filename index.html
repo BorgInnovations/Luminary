@@ -83,7 +83,7 @@
 
             <div class="m-container-editor">
                 <div>
-                        <textarea onkeyup="insertBody();" name="" id="textEditor" cols="50" rows="15" width="100%" placeholder='Say "Hello World!"'></textarea>
+                        <textarea onkeyup="insertBody(), updateLFile();" name="" id="textEditor" cols="50" rows="15" width="100%" placeholder='Say "Hello World!"'></textarea>
 
 
                         
@@ -108,6 +108,12 @@
             
 
         </section>
+
+
+        <section>
+            <embed id="lFile" src="./lfile.html" class="container-viewport card" type="">
+        </section>
+
 
     </section>
 
