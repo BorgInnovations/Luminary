@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borg Innovations</title>
+    <link rel="shortcut icon" href="./img/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./luminary.css">
+    <script src="./luminary.js"></script>
+    <script src="./menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@7.2.0/dist/umd/index.min.js"></script>
+    <script src="./source/synapse.js"></script>
+    <!--<script src="./source/disableselect.js"></script>-->
+
+
+
+</head>
+
+<!--
+          _____
+         /   o \
+        | o   O |
+        \_____ /
+                 
+        
+ /^\
+ |O|
+/| |\
+||_||
+^   ^
+^   ^
+^   ^
+
+Inspired by the software engineers of the Luminary and Comanche flight software system for the Apollo NASA program.
+    https://github.com/chrislgarry/Apollo-11
+    https://www.ibiblio.org/apollo/#gsc.tab=0
+-->
+
+
+<header>
+    <a name="#top" hidden></a>
+    <div class="nav" id="topMenu">
+
+    </div>
+    <a href="#top">
+        <button class="topbus">
+            ^^^
+        </button>
+    </a>
+
+
+
+
+</header>
+
+
+<body onload="topMenu_load(), footMenu_load()">
+    <section style="display: none;" id="contact">
+
+        <div class="card">
+            <div class="card-heading">
+                <h1>Contact.</h1>
+            </div>
+            <div class="card-body">
+                <iframe data-tally-src="https://tally.so/embed/nGW48Z?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="476" frameborder="0" marginheight="0" marginwidth="0" title="Contact"></iframe>
+
+                <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>                </iframe>
+
+            </div>
+        </div>
+    </section>
+
+    <section style="display: none;" id="products">
+
+    </section>
+
+
+    <center>
+        <img src="./img/icons/Luminary.svg" style="width: 50%; min-width: 200px; max-width: 500px;" alt="">
+    </center>
+
+
+    <div class="card">
+        <div class="card-heading">
+            <h1>Synapse Snippet Builder</h1>
+        </div>
+        <div class="card-body">
+            <center>
+                <h2 style="text-decoration: none;">
+                    A C0RT3X01 Tool
+                </h2>
+
+
+            </center>
+            <div class="divider">***************</div>
+
+            <center>
+                <p><input spellcheck="false" onkeyup="" style="width:50%; max-width: 500px; min-width: 125px; text-align: center;" class="text-input"
+                        type="text" id="synapse_title" placeholder="* * * Synapse Title * * *"></p>
+                <p><input spellcheck="false" onkeyup="" style="width:50%; max-width: 500px; min-width: 125px; text-align: center;" class="text-input"
+                        type="text" id="synapse_search" placeholder="* * * Synapse Search Content * * *"></p>
+                <p><input spellcheck="false" onkeyup="" style="width:50%; max-width: 500px; min-width: 125px; text-align: center;" class="text-input"
+                        type="text" id="synapse_author" placeholder="* * * Synapse Author * * *"></p>
+                <p><input spellcheck="false" onkeyup="" style="width:50%; max-width: 500px; min-width: 125px; text-align: center;" class="text-input"
+                        type="text" id="synapse_content" placeholder="* * * Synapse Content * * *"></p>
+                        <p><input spellcheck="false" onkeyup="" style="width:50%; max-width: 500px; min-width: 125px; text-align: center;" class="text-input"
+                            type="text" id="synapse_language" placeholder="* * * Synapse Language * * *"></p>
+
+                <p> <button onclick="synapse_build()" class="abus">Build Synapse</button>
+                    <!--<button onclick="synapse_preview()" class="bbus">Preview Synapse</button>--> 
+                    <button onclick="synapse_clear()"
+                        class="obus">Clear</button> </p>
+
+                <div class="divider">***************</div>
+
+                <p id="synapse_options" style="display: none;"><button onclick="synapse_copy()" class="abus">Copy
+                        Synapse</button> <button onclick="synapse_download()" class="abus">Download Synapse</button></p>
+
+                <code class="border" id="synapse_output" style="display: none;" contenteditable="true" spellcheck="false">
+                <!--
+                    <div>
+                    <p>
+                        <span id="s_open"></span>
+                        <span id="s_id"></span>
+                        <span id="s_title"></span>
+                        <span id="s_url"></span>
+                        <span id="s_author"></span>
+                        <span id="s_content"></span>
+                        <span id="s_ai"></span>
+                        <span id="s_close"></span>
+
+                     </p>
+                </div>
+            -->
+
+                
+                </code>
+
+
+            </center>
+        </div>
+    </div>
+
+
+
+
+
+    <!--Ephesians 5:11-->
+    <!--Have nothing to do with the fruitless deeds of darkness, but rather expose them.-->
+
+    <!--John 3:16-->
+    <!--For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.-->
+
+</body>
+
+
+<footer id="footMenu">
+
+</footer>
+
+</html>

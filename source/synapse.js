@@ -25,15 +25,16 @@ async function synapse_check() {
 function synapse_build() {
     document.getElementById("synapse_output").style.display = 'block';
     d = new Date()
-    s_id = d.getTime()
+    s_id = 'm'+d.getDate()+d.getMonth()+d.getYear()+d.getHours()+d.getSeconds()+d.getMilliseconds()
 
     s_title = document.getElementById("synapse_title").value
-    s_url = document.getElementById("synapse_url").value
+    s_url = document.getElementById("synapse_search").value
     s_author = document.getElementById("synapse_author").value
     s_content = document.getElementById("synapse_content").value
-    s_ai = document.getElementById("synapse_score").value
+    s_ai = document.getElementById("synapse_language").value
 
-    s_result = '<p style="padding-top:15px">{ id: ' + s_id + ', title: "' + s_title + '", content: "' + s_content + ' ' + s_author + '", author: "' + s_author + '", ai_score: "' + s_ai + '", url: "' + s_url + '"}, </p>'
+    s_result = '<p style="padding-top:15px">{ id: ' + s_id + ', title: "' + s_title + '", search_content: "' + s_url + ' ' + s_author + '", author: "' + s_author + '", language: "' + s_ai + '", content: "' + s_content + '"}, </p>'
+
 
     document.getElementById("synapse_output").innerHTML = s_result
 
@@ -44,15 +45,12 @@ function synapse_build() {
 
 function synapse_clear(){
     document.getElementById("synapse_title").value = ''
-    document.getElementById("synapse_url").value = ''
+    document.getElementById("synapse_search").value = ''
     document.getElementById("synapse_author").value = ''
     document.getElementById("synapse_content").value = ''
-    document.getElementById("synapse_score").value = ''
+    document.getElementById("synapse_language").value = ''
 }
 
-function synapse_open(){
-    window.open(document.getElementById("synapse_url").value)
-}
 
 function synapse_preview(){
 

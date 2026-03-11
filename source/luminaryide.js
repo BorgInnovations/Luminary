@@ -135,6 +135,6 @@ function idbClear() {
    }
    
    function versionID(){
-     cv = 'Alpha 1.3.1'
+     cv = 'Alpha 1.3.2'
      document.getElementById("versionID").innerHTML = cv
    }
