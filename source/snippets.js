@@ -20,7 +20,8 @@ function conduct_search() {
 
 const documents = [
 
-  { id: 1, title: 'LuminaryCSS HTML Support', search_content:'LuminaryCSS luminary support css install luminary', content: '<link rel="stylesheet" href="https://luminary.borginnovations.com/luminary.css"><script src="https://luminary.borginnovations.com/luminary.js"></script>', author: 'Borg', language: 'HTML, CSS, JavaScript'},
+    //Luminary
+  { id: 1, title: 'Install LuminaryCSS', search_content:'LuminaryCSS luminary support css install luminary', content: '<link rel="stylesheet" href="https://luminary.borginnovations.com/luminary.css"><script src="https://luminary.borginnovations.com/luminary.js"></script>', author: 'Borg', language: 'HTML, CSS, JavaScript'},
   { id: 2, title: 'LuminaryCSS HTML Card', search_content:'LuminaryCSS luminary styled card', content: '<section class="card"><div class="card-heading"></div><div class="card-body"></div></section>', author: 'Borg', language: 'HTML, CSS'},
   { id: 3, title: 'LuminaryCSS HTML Card Alt Style', search_content:'LuminaryCSS luminary styled card Alt Style', content: '<section class="card-alt"><div class="card-heading-alt"></div><div class="card-body-alt"></div></section>', author: 'Borg', language: 'HTML, CSS'},
   { id: 4, title: 'LuminaryCSS Orange Button', search_content:'LuminaryCSS luminary button html orange styled styles link a', content: '<a class="obus">obus Button</a>', author: 'Borg', language: 'HTML, CSS'},
@@ -29,7 +30,11 @@ const documents = [
   { id: 7, title: 'LuminaryCSS Deafult Button', search_content:'LuminaryCSS luminary button html white styled styles link a', content: '<a class="abus">obus Button</a>', author: 'Borg', language: 'HTML, CSS'},
   { id: 8, title: 'LuminaryCSS Link', search_content:'LuminaryCSS luminary button html default basic styled styles link a', content: '<a class="a">default link</a>', author: 'Borg', language: 'HTML, CSS'},
 
+  //Bulma
+  { id: 9, title: "Install Bulma CSS", search_content:"CSS Library Bulma Install", content: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">', author: "Jeremy Thomas", language: "HTML, CSS"},
 
+    //Bootstrap
+    { id: 10, title: "Install Bootstrap", search_content:"CSS Javascript Bootstrap Install Library", content: '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>', author: "Bootstrap Team", language: "HTML, CSS, Javascript"},
 
 
 ]; 
