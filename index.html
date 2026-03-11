@@ -71,7 +71,7 @@
     
 </header>
 
-<body onload="topMenu_load(), footMenu_load(), loadEditor(), insertBody(), versionID()">
+<body onload="topMenu_load(), footMenu_load(), loadEditor(), versionID(),updateLFile()">
     
 
     <section class="m-ide card">
@@ -83,7 +83,7 @@
 
             <div class="m-container-editor">
                 <div>
-                        <textarea onkeyup="insertBody(), updateLFile();" name="" id="textEditor" cols="50" rows="15" width="100%" placeholder='Say "Hello World!"'></textarea>
+                        <textarea onkeyup="updateLFile();" name="" id="textEditor" cols="50" rows="15" width="100%" placeholder='Say "Hello World!"'></textarea>
 
 
                         
@@ -92,7 +92,7 @@
             
 
         </section>
-
+<!--
         <section id="viewport" contenteditable="true" onkeyup="updateBody();">
             <div class="container-viewport card">
                 <p><div id="ide-menu">
@@ -105,13 +105,16 @@
 
                 </div></p>
             </div>
-            
+        
 
-        </section>
+        </section>-->
 
 
-        <section>
-            <embed id="lFile" src="./lfile.html" class="container-viewport card" type="">
+        <section id="viewport">
+            <center>
+                <embed id="lFile" src="./lfile.html" class="container-viewport card" type="" width="95%"> 
+
+            </center>
         </section>
 
 
