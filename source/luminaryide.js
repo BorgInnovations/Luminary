@@ -90,6 +90,14 @@ document.getElementById("textEditor").value =
    startAutoSave();
    
       //End
+
+     // Clears all entries from the store
+function idbClear() {
+  document.getElementById("textEditor").value =''
+  document.getElementById("lFile").src = './lfile.html'
+}
+
+//end
    
    function saveFile() {
        var blob = new Blob([document.getElementById("textEditor").value],
