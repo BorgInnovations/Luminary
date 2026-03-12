@@ -7,13 +7,14 @@ s_content=input('Snippet: ')
 s_keywords=input('Keywords: ')
 s_lan=input('Language: ')
 s_author=input('Author: ')
+s_lic=input('License: ')
 
 print('***')
 print('***')
 print('***')
 print('Snippet:')
 
-snippet='{ id: x, title: "'+s_title+'", search_content:"'+s_keywords+'", content: "'+s_content+'", author: "'+s_author+'", language: "'+s_lan+'"},'
+snippet='{ id: x, title: "'+s_title+'", search_content:"'+s_keywords+'", content: "'+s_content+'", author: "'+s_author+'", language: "'+s_lan+'", license: "'+s_lic+'"},'
 print(snippet)
 
 
