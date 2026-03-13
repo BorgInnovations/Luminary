@@ -92,11 +92,22 @@ document.getElementById("textEditor").value =
       //End
 
      // Clears all entries from the store
-function idbClear() {
+/*function idbClear() {
   document.getElementById("textEditor").value =''
   document.getElementById("lFile").src = './lfile.html'
 
   
+}*/
+
+function idbClear() {
+
+  if (confirm("Are you sure you want to DELETE? This CANNOT be undone.")) {
+    document.getElementById("textEditor").value =''
+    document.getElementById("lFile").src = './lfile.html'
+  } else {
+    console.log('Canceled file deletion')
+  }
+
 }
 
 //end
