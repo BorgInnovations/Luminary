@@ -103,3 +103,16 @@
 .m-textEditor{
 
 }
+.a-comanche {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: var(--comanche);
+}
+
+.a:hover {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: var(--mercury);
+}

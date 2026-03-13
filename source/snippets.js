@@ -31,7 +31,7 @@ const documents = [
     { id: 200004, title: 'LuminaryCSS Orange Button', search_content:'LuminaryCSS luminary button html orange styled styles link a', content: '<a class="obus">obus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
     { id: 200005, title: 'LuminaryCSS Blue Button', search_content:'LuminaryCSS luminary button html blue styled styles link a', content: '<a class="bbus">obus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
     { id: 200006, title: 'LuminaryCSS Green Button', search_content:'LuminaryCSS luminary button html green styled styles link a', content: '<a class="gbus">obus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
-    { id: 200007, title: 'LuminaryCSS Deafult Button', search_content:'LuminaryCSS luminary button html white styled styles link a', content: '<a class="abus">obus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
+    { id: 200007, title: 'LuminaryCSS Default Button', search_content:'LuminaryCSS luminary button html white styled styles link a', content: '<a class="abus">obus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
     { id: 200008, title: 'LuminaryCSS Link', search_content:'LuminaryCSS luminary button html default basic styled styles link a', content: '<a class="a">default link</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
 
     //Bulma

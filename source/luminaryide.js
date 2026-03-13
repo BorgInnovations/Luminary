@@ -134,7 +134,31 @@ function idbClear() {
     document.getElementById("lFile").src = './lfile.html'
    }
    
+   function copyCode() {
+
+
+    const text = document.getElementById('textEditor').value
+    navigator.clipboard.writeText(text);
+
+}
+
    function versionID(){
-     cv = 'Alpha 1.3.2'
+     cv = 'Alpha 1.3.3'
      document.getElementById("versionID").innerHTML = cv
    }
+
+   /*
+===
+Change log: Alpha 1.3.3 and on
+===
+
+Alpha 1.3.3
+   *Updated Luminary "File" menu
+   *Corrected Snippets bugs
+   *CSS updates
+   *Python script bug to resolve JSON errors
+
+===
+End of line
+===
+   */

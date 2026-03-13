@@ -14,7 +14,7 @@ print('***')
 print('***')
 print('Snippet:')
 
-snippet='{ id: x, title: "'+s_title+'", search_content:"'+s_keywords+'", content: "'+s_content+'", author: "'+s_author+'", language: "'+s_lan+'", license: "'+s_lic+'"},'
+snippet='{ id: x, title: "'+s_title+'", search_content:"'+s_keywords+'", content: &#39'+s_content+'&#39, author: "'+s_author+'", language: "'+s_lan+'", license: "'+s_lic+'"},'
 print(snippet)
 
 
