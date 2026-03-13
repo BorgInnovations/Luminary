@@ -93,9 +93,16 @@ document.getElementById("textEditor").value =
 
      // Clears all entries from the store
 function idbClear() {
-  document.getElementById("textEditor").value =''
-  document.getElementById("lFile").src = './lfile.html'
+
+  if (confirm("Are you sure you want to DELETE? This CANNOT be undone.")) {
+    document.getElementById("textEditor").value =''
+    document.getElementById("lFile").src = './lfile.html'
+  } else {
+    console.log('Canceled file deletion')
+  }
+
 }
+
 
 //end
    
@@ -139,6 +146,7 @@ function idbClear() {
 
     const text = document.getElementById('textEditor').value
     navigator.clipboard.writeText(text);
+    window.alert('Code copied to clipboard')
 
 }
 
