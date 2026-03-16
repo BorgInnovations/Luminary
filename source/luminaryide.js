@@ -146,7 +146,9 @@ function idbClear() {
    function updateLFile(){
     document.getElementById("lFile").src = './lfile.html'
    }
-   
+   function forceRenderAlert(){
+    window.alert('Viewport force rendered')
+  }
    function copyCode() {
     const text = document.getElementById('textEditor').value
     navigator.clipboard.writeText(text);
