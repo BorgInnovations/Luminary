@@ -66,11 +66,11 @@
             <h1>File.</h1> 
         </div>
         <div class="card-body"><div>
-            <p> <a class="a-comanche" onclick="idbClear(),updateLFile()">Delete Project</a> </p>
-            <p> <a class="a" onclick="updateLFile()">Force Render</a> </p>
-            <p> <a class="a" href="./lfile.html" target="_blank">Tab Project</a> </p>
-            <p> <a class="a" onclick="copyCode()">Copy Project</a> </p>
-            <p> <a class="a" onclick="saveFile()">Download Project</a> </p>
+            <p> <a class="a-comanche" onclick="idbClear(),updateLFile(), openL()">Delete Project</a> </p>
+            <p> <a class="a" onclick="updateLFile(), openL()">Force Render</a> </p>
+            <p> <a class="a" href="./lfile.html" target="_blank" onclick="openL()">Tab Project</a> </p>
+            <p> <a class="a" onclick="copyCode(), openL()">Copy Project</a> </p>
+            <p> <a class="a" onclick="saveFile(), openL()">Download Project</a> </p>
         
         </div></div></div>
     <script src="./source/FileSaver.js"></script>

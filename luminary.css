@@ -226,6 +226,13 @@ a {
 .nbus:hover {
     cursor: pointer;
 }
+.nbus-alt {
+    display: block;
+    color: var(--comanche);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
 /*Cards*/
 .card {
