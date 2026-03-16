@@ -155,7 +155,7 @@ function idbClear() {
 }
 
    function versionID(){
-     cv = 'Alpha 1.3.3'
+     cv = 'Alpha 1.3.4'
      document.getElementById("versionID").innerHTML = cv
    }
 
@@ -163,6 +163,9 @@ function idbClear() {
 ===
 Change log: Alpha 1.3.3 and on
 ===
+Alpha 1.3.4
+   *Disabled Autocorrect in TextEditor pane
+
 
 Alpha 1.3.3
    *Updated Luminary "File" menu
