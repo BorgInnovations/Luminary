@@ -6,7 +6,7 @@ function topMenu_load() {
 }
 
 function footMenu_load() {
-  document.getElementById("footMenu").innerHTML = '    <p style="text-align: center;"><a href="./index.html"><img src="./img/icons/BI_1.svg" style="width: 200px;padding: 15px;" alt=""></a></p><p style="text-align: center;">Organically coded in San Diego, CA</p><center><p><a class="a" href="https://buymeacoffee.com/jborg_arts" target="_blank"> <button class="obus">Buy me a coffee</button> </a></p><p><a class="a" href="./privacy.html">Privacy</a> | <a class="a" href="./licenses.html">Licenses</a> | <a class="a" href="https://borginnovations.cronitorstatus.com/" target="_BLANK">Status</a></p></center><p style="text-align: center;">© 2026 Jacob Borg</p>  '
+  document.getElementById("footMenu").innerHTML = '    <p style="text-align: center;"><a href="./index.html"><img src="./img/icons/BI_1.svg" style="width: 200px;padding: 15px;" alt=""></a></p><p style="text-align: center;">Organically coded in San Diego, CA</p><center><p><a class="a" href="https://buymeacoffee.com/jborg_arts" target="_blank"> <button class="obus">Buy me a coffee</button> </a></p><p><a class="a" href="./privacy.html">Privacy</a> | <a class="a" href="./licenses.html">Licenses</a> | <a class="a" href="https://github.com/orgs/BorgInnovations/discussions/categories/announcements" target="_BLANK">GitHub</a> | <a class="a" href="https://borginnovations.cronitorstatus.com/" target="_BLANK">Status</a></p></center><p style="text-align: center;">© 2026 Jacob Borg</p>  '
   console.log('Footer menu factor loaded')
 }
 
