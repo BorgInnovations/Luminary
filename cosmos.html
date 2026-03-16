@@ -21,6 +21,15 @@
         <script src="./luminary.js"></script>
         <script src="./menu.js"></script>
         <script src="./source/luminaryide.js"></script>
+
+        <!--Auth-->
+        <script type="text/javascript" src="https://sdk.userbase.com/2/userbase.js"></script>
+        <script type="text/javascript">
+            userbase.init({ appId: '16fc3ec4-bf22-4e68-91f6-cadd0b3279aa' })
+
+            document.getElementById('login-form').addEventListener('submit', handleLogin)
+          </script>
+        <!--End-->
     
         <!-- Cronitor RUM -->
         <!--
@@ -66,11 +75,11 @@
             <h1>File.</h1> 
         </div>
         <div class="card-body"><div>
-            <p> <a class="a-comanche" onclick="idbClear(),updateLFile(), openL()">Delete Project</a> </p>
-            <p> <a class="a" onclick="updateLFile(),forceRenderAlert(), openL()">Force Render</a> </p>
-            <p> <a class="a" href="./lfile.html" target="_blank" onclick="openL()">Tab Project</a> </p>
-            <p> <a class="a" onclick="copyCode(), openL()">Copy Project</a> </p>
-            <p> <a class="a" onclick="saveFile(), openL()">Download Project</a> </p>
+            <p> <a class="a-comanche" onclick="idbClear(),updateLFile()">Delete Project</a> </p>
+            <p> <a class="a" onclick="updateLFile()">Force Render</a> </p>
+            <p> <a class="a" href="./lfile.html" target="_blank">Tab Project</a> </p>
+            <p> <a class="a" onclick="copyCode()">Copy Project</a> </p>
+            <p> <a class="a" onclick="saveFile()">Download Project</a> </p>
         
         </div></div></div>
     <script src="./source/FileSaver.js"></script>
@@ -81,7 +90,7 @@
             <div class="card-body" style="padding-top: 15px;">
                 <div>
 
-                    <script src="./source/snippets.js"></script>
+                    <script src="./source/snippetsCosmos.js"></script>
 
                     <center style=""><input id="searchBox"
                         style="width:50%; max-width: 500px; min-width: 125px; text-align: center;" class="text-input" type="text"
@@ -92,11 +101,6 @@
                     <div id="results" style="height: 300px; overflow-y: scroll;"></div>
             
                   </div>
-                <!--<div>
-
-                    <embed src="./snippetsearch.html" style="width: 100%; min-width: 200px; padding: 0px; margin: 0px;" height="300"
-                    style="overflow-y: auto;">
-                </div>-->
             </div>
         </div>
     </div>
@@ -120,7 +124,7 @@
 
             <div class="m-container-editor">
                 <div>
-                        <textarea onkeyup="updateLFile();" name="" id="textEditor" cols="50" rows="15" width="100%" autocorrect="off" placeholder='Say "Hello World!"'></textarea>
+                        <textarea onkeyup="updateLFile();" name="" id="textEditor" cols="50" rows="15" width="100%" placeholder='Say "Hello World!"'></textarea>
                     <!--insertBody(), -->
 
                         
