@@ -30,21 +30,31 @@ const documents = [
     { id: 100007, title: "Iframe", search_content:"html iframe embed", content: '<iframe src="https://borginnovations.com/" title="Borg Innovations"></iframe>', author: "Borg", language: "HTML", license: "N/A"},
 
     //Luminary
-    { id: 200001, title: 'Install LuminaryCSS', search_content:'LuminaryCSS luminary support css install luminary', content: '<link rel="stylesheet" href="https://luminary.borginnovations.com/luminary.css"><script src="https://luminary.borginnovations.com/luminary.js"></script>', author: 'Borg', language: 'HTML, CSS, JavaScript', license: 'MIT'},
-    { id: 200002, title: 'LuminaryCSS HTML Card', search_content:'LuminaryCSS luminary styled card', content: '<section class="card"><div class="card-heading"></div><div class="card-body"></div></section>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
-    { id: 200003, title: 'LuminaryCSS HTML Card Alt Style', search_content:'LuminaryCSS luminary styled card Alt Style', content: '<section class="card-alt"><div class="card-heading-alt"></div><div class="card-body-alt"></div></section>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
-    { id: 200004, title: 'LuminaryCSS Orange Button', search_content:'LuminaryCSS luminary button html orange styled styles link a', content: '<a class="obus">obus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
-    { id: 200005, title: 'LuminaryCSS Blue Button', search_content:'LuminaryCSS luminary button html blue styled styles link a', content: '<a class="bbus">bbus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
-    { id: 200006, title: 'LuminaryCSS Green Button', search_content:'LuminaryCSS luminary button html green styled styles link a', content: '<a class="gbus">gbus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
-    { id: 200007, title: 'LuminaryCSS Default Button', search_content:'LuminaryCSS luminary button html white styled styles link a', content: '<a class="abus">abus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
-    { id: 200008, title: 'LuminaryCSS Link', search_content:'LuminaryCSS luminary button html default basic styled styles link a', content: '<a class="a">default link</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
+    { id: 200001, title: 'Install Luminary CSS', search_content:'LuminaryCSS luminary support css install luminary', content: '<link rel="stylesheet" href="https://luminary.borginnovations.com/luminary.css"><script src="https://luminary.borginnovations.com/luminary.js"></script>', author: 'Borg', language: 'HTML, CSS, JavaScript', license: 'MIT'},
+    { id: 200002, title: 'Luminary HTML Card', search_content:'LuminaryCSS luminary styled card', content: '<section class="card"><div class="card-heading"></div><div class="card-body"></div></section>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
+    { id: 200003, title: 'Luminary HTML Card Alt Style', search_content:'LuminaryCSS luminary styled card Alt Style', content: '<section class="card-alt"><div class="card-heading-alt"></div><div class="card-body-alt"></div></section>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
+    { id: 200004, title: 'Luminary Orange Button', search_content:'LuminaryCSS luminary button html orange styled styles link a', content: '<a class="obus">obus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
+    { id: 200005, title: 'Luminary Blue Button', search_content:'LuminaryCSS luminary button html blue styled styles link a', content: '<a class="bbus">bbus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
+    { id: 200006, title: 'Luminary Green Button', search_content:'LuminaryCSS luminary button html green styled styles link a', content: '<a class="gbus">gbus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
+    { id: 200007, title: 'Luminary Default Button', search_content:'LuminaryCSS luminary button html white styled styles link a', content: '<a class="abus">abus Button</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
+    { id: 200008, title: 'Luminary Link', search_content:'LuminaryCSS luminary button html default basic styled styles link a', content: '<a class="a">default link</a>', author: 'Borg', language: 'HTML, CSS', license: 'MIT'},
+    { id: 200009, title: "Luminary Footer Menu", search_content:"html luminary footer foot menu", content: '<p style="text-align: center;"><a href="./index.html"><img src="" style="width: 200px;padding: 15px;" alt="Logo"></a></p><p style="text-align: center;">TAGLINE</p><center><p><a class="a" href="https://buymeacoffee.com/jborg_arts" target="_blank"> <button class="obus">Buy me a coffee</button> </a></p><p><a class="a" href="./privacy.html">Privacy</a> | <a class="a" href="#" target="_BLANK">Status</a></p></center><p style="text-align: center;">© 2026 NAME</p>', author: "Borg", language: "HTML, CSS", license: "MIT"},
+    { id: 200010, title: "Luminary Search Bar", search_content:"luminary html search bar input", content: '<input id="" style="width:50%; max-width: 500px; min-width: 125px; text-align: center;" class="text-input" type="text" id="" onkeydown="" onkeyup="" placeholder="* * * search * * *"></input>', author: "Borg", language: "HTML", license: "MIT"},
+
+
+
+
     //Bulma
     { id: 300001, title: "Install Bulma CSS", search_content:"CSS Library Bulma Install", content: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">', author: "Jeremy Thomas", language: "HTML, CSS",license: 'MIT'},
 
     //Bootstrap
     { id: 400001, title: "Install Bootstrap", search_content:"CSS Javascript Bootstrap Install Library", content: '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>', author: "Bootstrap Team", language: "HTML, CSS, Javascript", license: 'MIT'},
 
+    //UIKit
+    { id: 500001, title: "Install UIKit", search_content:"UIKit install", content: '<script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit-icons.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/css/uikit.min.css" /><script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit.min.js"></script>', author: "YOOtheme GmbH", language: "HTML, CSS, Javascript", license: "MIT"},
 
+    //Foundation
+    { id: 600001, title: "Install Foundation", search_content:"install foundation css library", content: '<!-- Compressed CSS --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous"><!-- Compressed JavaScript --><script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js" crossorigin="anonymous"></script>', author: "ZURB, Inc.", language: "HTML, CSS, Javascript", license: "MIT"},
 ]; 
 
 const pre = 'https://'
