@@ -46,6 +46,11 @@ const documents = [
 
     //Bulma
     { id: 300001, title: "Install Bulma CSS", search_content:"CSS Library Bulma Install", content: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">', author: "Jeremy Thomas", language: "HTML, CSS",license: 'MIT'},
+    { id: 300002, title: "Bulma Block", search_content:"bulma block html", content: '<div class="block">This text is within a <strong>block</strong>.</div>', author: "Jeremy Thomas", language: "HTML", license: "MIT"},
+    { id: 300003, title: "Bulma Box", search_content:"bulma box html", content: '<div class="box">I\'m in a box.</div>', author: "Jeremy Thomas", language: "HTML", license: "MIT"},
+    { id: 300004, title: "Bulma Button", search_content:"Bulma button html", content: '<button class="button">Button</button>', author: "Jeremy Thomas", language: "HTML", license: "MIT"},
+    { id: 300005, title: "Bulma Img", search_content:"bulma img image html", content: '<figure class="image is-128x128"><img src="https://bulma.io/assets/images/placeholders/128x128.png"/></figure>', author: "Jeremy Thomas", language: "HTML", license: "MIT"},
+    { id: 300006, title: "Bulma Notification", search_content:"bulma html notification", content: '<div class="notification"><button class="delete"></button>Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.</div>', author: "Jeremy Thomas", language: "HTML", license: "MIT"},
 
     //Bootstrap
     { id: 400001, title: "Install Bootstrap", search_content:"CSS Javascript Bootstrap Install Library", content: '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>', author: "Bootstrap Team", language: "HTML, CSS, Javascript", license: 'MIT'},
