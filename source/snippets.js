@@ -73,6 +73,7 @@ const documents = [
     { id: 400005, title: "Bootstrap Extra Large Container", search_content:"bootstrap container-xl extra large html", content: '<div class="container-xl">100% wide until extra large breakpoint</div>', author: "Bootstrap Team", language: "HTML", license: "MIT"},
     { id: 400006, title: "Bootstrap Extra Extra Large Container", search_content:"bootstrap container-xxl extra extra large html", content: '<div class="container-xxl">100% wide until extra extra large breakpoint</div>', author: "Bootstrap Team", language: "HTML", license: "MIT"},
     { id: 400007, title: "Bootstrap Fluid Container", search_content:"bootstrap fluid container html", content: ' <div class="container-fluid"></div>', author: "Bootstrap Team", language: "HTML", license: "MIT"},
+    { id: 400008, title: "Bootstrap Grid System", search_content:"bootstrap grid system html", content: '<div class="container text-center">  <div class="row">    <div class="col">      Column    </div>    <div class="col">      Column    </div>    <div class="col">      Column    </div>  </div></div>', author: "Bootstrap Team", language: "HTML", license: "MIT"},
 
 
     //UIKit
@@ -112,4 +113,5 @@ function displayResults(results) {
   
   function result_copy(content) {
     navigator.clipboard.writeText(content);
+    window.alert('Snippet copied to clipboard')
   }
