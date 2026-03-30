@@ -67,6 +67,13 @@ const documents = [
 
     //Bootstrap
     { id: 400001, title: "Install Bootstrap", search_content:"CSS Javascript Bootstrap Install Library", content: '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>', author: "Bootstrap Team", language: "HTML, CSS, Javascript", license: 'MIT'},
+    { id: 400002, title: "Bootstrap Small Container", search_content:"bootstrap html small sml container container-sm", content: '<div class="container-sm">100% wide until small breakpoint</div>', author: "Bootstrap Team", language: "HTML", license: "MIT"},
+    { id: 400003, title: "Bootstrap Medium Container", search_content:"bootstrap html container-md medium", content: '<div class="container-md">100% wide until medium breakpoint</div>', author: "Bootstrap Team", language: "HTML", license: "MIT"},
+    { id: 400004, title: "Bootstrap Large Container", search_content:"bootstrap container-lg large html", content: '<div class="container-lg">100% wide until large breakpoint</div>', author: "Bootstrap Team", language: "HTML", license: "MIT"},
+    { id: 400005, title: "Bootstrap Extra Large Container", search_content:"bootstrap container-xl extra large html", content: '<div class="container-xl">100% wide until extra large breakpoint</div>', author: "Bootstrap Team", language: "HTML", license: "MIT"},
+    { id: 400006, title: "Bootstrap Extra Extra Large Container", search_content:"bootstrap container-xxl extra extra large html", content: '<div class="container-xxl">100% wide until extra extra large breakpoint</div>', author: "Bootstrap Team", language: "HTML", license: "MIT"},
+    { id: 400007, title: "Bootstrap Fluid Container", search_content:"bootstrap fluid container html", content: ' <div class="container-fluid"></div>', author: "Bootstrap Team", language: "HTML", license: "MIT"},
+
 
     //UIKit
     { id: 500001, title: "Install UIKit", search_content:"UIKit install", content: '<script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit-icons.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/css/uikit.min.css" /><script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit.min.js"></script>', author: "YOOtheme GmbH", language: "HTML, CSS, Javascript", license: "MIT"},
