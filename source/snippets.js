@@ -127,6 +127,7 @@ function displayResults(results) {
   function result_copy(content) {
     navigator.clipboard.writeText(content);
     /*window.alert('Snippet copied to clipboard')*/
+    document.getElementById("alert1txt").style.color='var(--buzz)'
     document.getElementById("alert1txt").innerHTML = 'Snippet copied to clipboard'
 
     document.getElementById("alert1").style.display='block'
