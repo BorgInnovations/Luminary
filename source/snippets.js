@@ -111,6 +111,13 @@ function displayResults(results) {
   
       listItem.onclick = function() {
         result_copy(result.content);
+
+        var x = document.getElementById("snippets");
+        if (x.style.display === "none") {
+           x.style.display = "block";
+        } else {
+           x.style.display = "none";
+        }
       };
   
       resultsElement.appendChild(listItem);
@@ -119,5 +126,13 @@ function displayResults(results) {
   
   function result_copy(content) {
     navigator.clipboard.writeText(content);
-    window.alert('Snippet copied to clipboard')
+    /*window.alert('Snippet copied to clipboard')*/
+    document.getElementById("alert1txt").innerHTML = 'Snippet copied to clipboard'
+
+    document.getElementById("alert1").style.display='block'
+
+    setTimeout(() => {
+      document.getElementById("alert1").style.display = 'none';
+    }, 3000);
+
   }

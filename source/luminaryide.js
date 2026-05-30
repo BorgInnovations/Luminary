@@ -104,8 +104,29 @@ function idbClear() {
   if (confirm("Are you sure you want to DELETE? This CANNOT be undone.")) {
     document.getElementById("textEditor").value =''
     document.getElementById("lFile").src = './lfile.html'
+
+          //Alrt strt
+          document.getElementById("alert1txt").style.color='var(--buzz)'
+          document.getElementById("alert1txt").innerHTML = 'Project deleted successfully'
+      
+          document.getElementById("alert1").style.display='block'
+      
+          setTimeout(() => {
+            document.getElementById("alert1").style.display = 'none';
+          }, 3000);
+          //Alrt end
   } else {
     console.log('Canceled file deletion')
+              //Alrt strt
+              document.getElementById("alert1txt").style.color='var(--comanche)'
+              document.getElementById("alert1txt").innerHTML = 'Project NOT deleted'
+          
+              document.getElementById("alert1").style.display='block'
+          
+              setTimeout(() => {
+                document.getElementById("alert1").style.display = 'none';
+              }, 3000);
+              //Alrt end
   }
 
 }
@@ -116,6 +137,17 @@ function idbClear() {
        var blob = new Blob([document.getElementById("textEditor").value],
           { type: "text/plain;charset=utf-8" });
        saveAs(blob, "luminaryDocument.html");
+
+                 //Alrt strt
+                 document.getElementById("alert1txt").style.color='var(--buzz)'
+                 document.getElementById("alert1txt").innerHTML = 'Project downloaded successfully'
+             
+                 document.getElementById("alert1").style.display='block'
+             
+                 setTimeout(() => {
+                   document.getElementById("alert1").style.display = 'none';
+                 }, 3000);
+                 //Alrt end
     }
    
    
@@ -147,17 +179,39 @@ function idbClear() {
     document.getElementById("lFile").src = './lfile.html'
    }
    function forceRenderAlert(){
-    window.alert('Viewport force rendered')
+    //window.alert('Viewport force rendered')
+
+    //Alrt strt
+    document.getElementById("alert1txt").style.color='var(--buzz)'
+    document.getElementById("alert1txt").innerHTML = 'Viewport force rendered'
+
+    document.getElementById("alert1").style.display='block'
+
+    setTimeout(() => {
+      document.getElementById("alert1").style.display = 'none';
+    }, 3000);
+    //Alrt end
   }
    function copyCode() {
     const text = document.getElementById('textEditor').value
     navigator.clipboard.writeText(text);
-    window.alert('Code copied to clipboard')
+    //window.alert('Code copied to clipboard')
+
+      //Alrt strt
+      document.getElementById("alert1txt").style.color='var(--buzz)'
+      document.getElementById("alert1txt").innerHTML = 'Project copied to clipboard'
+  
+      document.getElementById("alert1").style.display='block'
+  
+      setTimeout(() => {
+        document.getElementById("alert1").style.display = 'none';
+      }, 3000);
+      //Alrt end
 
 }
 
    function versionID(){
-     cv = 'Alpha 1.3.4'
+     cv = 'Alpha 1.3.6'
      document.getElementById("versionID").innerHTML = cv
    }
 

@@ -116,3 +116,10 @@
     text-decoration: underline;
     color: var(--mercury);
 }
+
+.alert{
+    color: var(--neil);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
