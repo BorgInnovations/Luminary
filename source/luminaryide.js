@@ -16,7 +16,7 @@ document.getElementById("textEditor").value =
    const DB_VERSION = 1;
    const STORE_NAME = "editorStore";
    const SAVE_KEY   = "file";
-   const SAVE_DELAY = 1000; // ms between saves
+   const SAVE_DELAY = 5000; // ms between saves
    
    // Opens (or creates) the database
    function openDB() {
@@ -87,9 +87,14 @@ document.getElementById("textEditor").value =
    }
    
    // Kick off auto-save immediately when script loads
+   
    startAutoSave();
    
       //End
+
+
+
+  
 
      // Clears all entries from the store
 /*function idbClear() {
@@ -211,7 +216,7 @@ function idbClear() {
 }
 
    function versionID(){
-     cv = 'Alpha 1.3.6'
+     cv = 'Alpha 1.3.7'
      document.getElementById("versionID").innerHTML = cv
    }
 
