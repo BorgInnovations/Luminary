@@ -223,7 +223,7 @@ function activateSideBar(){
 /*
   document.getElementById("sidebar").src = document.getElementById("sidebarSrc").value
   */
-  document.getElementById("editor").innerHTML = '<div class="m-container-editor"><div class="cols-2"><div><textarea onkeyup="updateLFile();" name="" id="textEditor" cols="75" rows="15" width="100%;" style="height: 300px;margin: 0px;" autocorrect="off" placeholder="Hello World!"></textarea></div><div><embed src="./source/sidebar.html" id="sidebar" class="card" style="width: 90%; height: 300px; margin: 0px;" frameborder="0"></div></div></div>  '
+  document.getElementById("editor").innerHTML = '<div class="m-container-editor"><div class="cols-2"><div><textarea onkeyup="updateLFile();" name="" id="textEditor" cols="75" rows="15" width="100%;" style="height: 300px;margin: 0px;" autocorrect="off" placeholder="Hello World!"></textarea></div><div><span id="sidebarembed"><embed src="./source/sidebar.html" id="sidebar" class="card" style="width: 90%; height: 300px; margin: 0px;" frameborder="0"></span></div></div></div>  '
   document.getElementById("sidebarBtn").innerHTML = '<a class="a" onclick="deactivateSideBar(), openlummenu()">Deactivate Side Bar</a>'
 
 
@@ -239,21 +239,14 @@ function deactivateSideBar(){
 
 
 function sidebarSetSrc(){
-  sidebarsrc = document.getElementById("sidebar").src
 
 
-  sidebarsrc = document.getElementById("sidebarSrc").value
-  /*
-  setInterval(async () => {
-    const sidebarLink = document.getElementById("sidebarSrc").value;
-    await idbSet(SAVE_KEY, sidebarLink);
-    console.log("Auto-saved:", sidebarLink);
-  }, SAVE_DELAY);
-  */
 
-  console.log('sidebar')
-  console.log(sidebarsrc)
+
   console.log(document.getElementById("sidebarSrc").value)
+
+  document.getElementById("sidebarembed").innerHTML = '<embed src="'+document.getElementById("sidebarSrc").value+'" id="sidebar" class="card" style="width: 90%; height: 300px; margin: 0px;" frameborder="0">  '
+
 
 }
 
@@ -278,7 +271,7 @@ function sidebarSetSrc(){
    }
 
    function versionID(){
-    cv = 'Alpha 1.3.8'
+    cv = 'Alpha 1.3.9'
     document.getElementById("versionID").innerHTML = cv
   }
 
@@ -286,6 +279,10 @@ function sidebarSetSrc(){
 ===
 Change log: Alpha 1.3.3 and on
 ===
+
+Alpha 1.3.8
+   ~Side bar bug fix
+
 Alpha 1.3.8
    +Sidebar
 
