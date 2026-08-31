@@ -30,8 +30,7 @@ if mode == 'm':
     r.clipboard_clear()
     r.clipboard_append(snippet)
 
-
-if mode == 't':
+else:
     s_title=input('Title: ')
     s_content=repr(input('Snippet: '))
     s_keywords=input('Keywords: ')
@@ -90,8 +89,8 @@ if mode == 't':
         r.clipboard_clear()
         r.clipboard_append(snippet)
 
-    if s_platform == 'foundation' or 'found':
-        s_author = 'ZURB, Inc.'
+    if s_platform == 'uikit' or 'ui':
+        s_author = 'YOOtheme GmbH'
         s_lic='MIT'
 
         print('=====')
@@ -106,6 +105,8 @@ if mode == 't':
         r.withdraw()
         r.clipboard_clear()
         r.clipboard_append(snippet)
+
+
 
     
 

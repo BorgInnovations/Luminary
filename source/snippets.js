@@ -84,6 +84,14 @@ const documents = [
 
     //UIKit
     { id: 500001, title: "Install UIKit", search_content:"UIKit install", content: '<script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit-icons.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/css/uikit.min.css" /><script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit.min.js"></script>', author: "YOOtheme GmbH", language: "HTML, CSS, Javascript", license: "MIT"},
+    { id: 500002, title: "UIKit Accordion", search_content:"uikit accordian menu drop down up", content: '<ul class="uk-accordion-default" uk-accordion><li><a class="uk-accordion-title" href></a><div class="uk-accordion-content"></div></li></ul>', author: "YOOtheme GmbH", language: "HTML, CSS", license: "MIT"},
+    { id: 500003, title: "UIKit Alert", search_content:"alert uikit", content: '<div uk-alert></div>', author: "YOOtheme GmbH", language: "HTML", license: "MIT"},
+    { id: 500004, title: "UIKit Article", search_content:"article uikit", content: '<article class="uk-article"><h1 class="uk-article-title"></h1><p class="uk-article-meta"></p></article>', author: "YOOtheme GmbH", language: "HTML", license: "MIT"},
+    { id: 500005, title: "UIKit Badge", search_content:"badge uikit html", content: '<span class="uk-badge"></span>', author: "YOOtheme GmbH", language: "HTML", license: "MIT"},
+    { id: 500006, title: "UIKit Link", search_content:"uikit link html", content: '<a class="uk-button uk-button-default" href=""></a>', author: "YOOtheme GmbH", language: "HTML", license: "MIT"},
+    { id: 500007, title: "UIKit Button", search_content:"uikit button html", content: '<button class="uk-button uk-button-default"></button>', author: "YOOtheme GmbH", language: "HTML", license: "MIT"},
+    { id: 500008, title: "UIKit Card", search_content:"uikit card html", content: '<div class="uk-card uk-card-body"><h3 class="uk-card-title"></h3></div>', author: "YOOtheme GmbH", language: "HTML", license: "MIT"},
+    { id: 500009, title: "UIKit Container", search_content:"UIKit containter html", content: '<div class="uk-container"></div>', author: "YOOtheme GmbH", language: "HTML", license: "MIT"},
 
     //Foundation
     { id: 600001, title: "Install Foundation", search_content:"install foundation css library", content: '<!-- Compressed CSS --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous"><!-- Compressed JavaScript --><script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js" crossorigin="anonymous"></script>', author: "ZURB, Inc.", language: "HTML, CSS, Javascript", license: "MIT"},
