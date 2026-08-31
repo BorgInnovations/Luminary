@@ -137,6 +137,8 @@ function displayResults(results) {
     /*window.alert('Snippet copied to clipboard')*/
     document.getElementById("alert1txt").style.color='var(--buzz)'
     document.getElementById("alert1txt").innerHTML = 'Snippet copied to clipboard'
+    
+    /*document.getElementById("textEditor").value += content*/
 
     document.getElementById("alert1").style.display='block'
 

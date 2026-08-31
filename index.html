@@ -101,6 +101,50 @@
         </div>
     </div>
 
+    <div id="sidebar" style="display: none;">
+
+        <div class="card">
+            <div class="card-heading">
+                <h1>Contact.</h1>
+            </div>
+            <div class="card-body" style="padding-top: 15px;">
+                <div>
+
+                    <iframe id="sidebarframe" style="height: 300px; overflow-y: scroll;" src="" frameborder="0"></iframe>
+            
+                  </div>
+                <!--<div>
+
+                    <embed src="./snippetsearch.html" style="width: 100%; min-width: 200px; padding: 0px; margin: 0px;" height="300"
+                    style="overflow-y: auto;">
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <div id="lummenu" style="display: none;">
+
+        <div class="card">
+            <div class="card-heading">
+                <h1>Luminary.</h1>
+            </div>
+            <div class="card-body" style="padding-top: 15px;">
+                <div>
+                    <h3>Settings</h3>
+                    <p id="sidebarBtn"> <a class="a" onclick="activateSideBar(), openlummenu()">Activate Side Bar</a> </p>
+                    <p> <input class="text-input" id="sidebarSrc" type="text" placeholder="url for sidebar"></input> <button class="abus" onclick="sidebarSetSrc()">go</button> </p>
+                    
+
+                  </div>
+                <!--<div>
+
+                    <embed src="./snippetsearch.html" style="width: 100%; min-width: 200px; padding: 0px; margin: 0px;" height="300"
+                    style="overflow-y: auto;">
+                </div>-->
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -121,10 +165,16 @@
 
             <div class="m-container-editor">
                 <div>
-                        <textarea onkeyup="updateLFile();" name="" id="textEditor" cols="75" rows="15" width="100%" autocorrect="off" placeholder='Say "Hello World!"'></textarea>
-                    <!--insertBody(), -->      
+
+                    
+                            <textarea onkeyup="updateLFile();" name="" id="textEditor" cols="75" rows="15" width="100%" autocorrect="off" placeholder='Say "Hello World!"'>
+                            
+                        </textarea>
+
+                        
                 </div>
             </div>
+
         </section>
 <!--
         <section id="viewport" contenteditable="true" onkeyup="updateBody();">

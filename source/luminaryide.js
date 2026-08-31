@@ -75,6 +75,9 @@ document.getElementById("textEditor").value =
      const saved = await idbGet(SAVE_KEY);
      document.getElementById("textEditor").value = saved;
      console.log("Editor content loaded.");
+
+
+     
    }
    
    // AUTO-SAVE — starts a 1s interval that saves editor content
@@ -215,15 +218,78 @@ function idbClear() {
 
 }
 
-   function versionID(){
-     cv = 'Alpha 1.3.7'
-     document.getElementById("versionID").innerHTML = cv
+
+function activateSideBar(){
+/*
+  document.getElementById("sidebar").src = document.getElementById("sidebarSrc").value
+  */
+  document.getElementById("editor").innerHTML = '<div class="m-container-editor"><div class="cols-2"><div><textarea onkeyup="updateLFile();" name="" id="textEditor" cols="75" rows="15" width="100%;" style="height: 300px;margin: 0px;" autocorrect="off" placeholder="Hello World!"></textarea></div><div><embed src="./source/sidebar.html" id="sidebar" class="card" style="width: 90%; height: 300px; margin: 0px;" frameborder="0"></div></div></div>  '
+  document.getElementById("sidebarBtn").innerHTML = '<a class="a" onclick="deactivateSideBar(), openlummenu()">Deactivate Side Bar</a>'
+
+
+}
+
+
+function deactivateSideBar(){
+  document.getElementById("editor").innerHTML = '<div class="m-container-editor"><div><textarea onkeyup="updateLFile();" name="" id="textEditor" cols="75" rows="15" width="100%" autocorrect="off" placeholder="Hello World"></textarea></div></div>'
+
+  document.getElementById("sidebarBtn").innerHTML = '<a class="a" onclick="activateSideBar(), openlummenu()">Activate Side Bar</a>'
+
+}
+
+
+function sidebarSetSrc(){
+  sidebarsrc = document.getElementById("sidebar").src
+
+
+  sidebarsrc = document.getElementById("sidebarSrc").value
+  /*
+  setInterval(async () => {
+    const sidebarLink = document.getElementById("sidebarSrc").value;
+    await idbSet(SAVE_KEY, sidebarLink);
+    console.log("Auto-saved:", sidebarLink);
+  }, SAVE_DELAY);
+  */
+
+  console.log('sidebar')
+  console.log(sidebarsrc)
+  console.log(document.getElementById("sidebarSrc").value)
+
+}
+
+
+   function addDiv(){
+    var newElem = ' <div class=""> </div> '
+    document.getElementById("textEditor").value += newElem
+  
    }
+
+   function addP(){
+    var newElem = ' <p class=""> </p> '
+    document.getElementById("textEditor").value += newElem
+  
+    
+   }
+   
+   function addA(){
+    var newElem = ' <a href="" target=""> </a> '
+    document.getElementById("textEditor").value += newElem
+  
+   }
+
+   function versionID(){
+    cv = 'Alpha 1.3.8'
+    document.getElementById("versionID").innerHTML = cv
+  }
 
    /*
 ===
 Change log: Alpha 1.3.3 and on
 ===
+Alpha 1.3.8
+   +Sidebar
+
+
 Alpha 1.3.4
    *Disabled Autocorrect in TextEditor pane
 
