@@ -248,6 +248,15 @@ function sidebarSetSrc(){
   document.getElementById("sidebarembed").innerHTML = '<embed src="'+document.getElementById("sidebarSrc").value+'" id="sidebar" class="card" style="width: 90%; height: 300px; margin: 0px;" frameborder="0">  '
 
 
+//Close menu
+  var x = document.getElementById("lummenu");
+  if (x.style.display === "none") {
+     x.style.display = "block";
+
+  } else {
+     x.style.display = "none";
+
+  }
 }
 
 
