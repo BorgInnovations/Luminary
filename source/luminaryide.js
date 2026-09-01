@@ -224,7 +224,7 @@ function activateSideBar(){
   document.getElementById("sidebar").src = document.getElementById("sidebarSrc").value
   */
   document.getElementById("editor").innerHTML = '<div class="m-container-editor"><div class="cols-2"><div><textarea onkeyup="updateLFile();" name="" id="textEditor" cols="75" rows="15" width="100%;" style="height: 300px;margin: 0px;" autocorrect="off" placeholder="Hello World!"></textarea></div><div><span id="sidebarembed"><iframe src="./source/sidebar.html" id="sidebar" class="card" style="width: 90%; height: 300px; margin: 0px;" frameborder="0" sandbox="allow-scripts"></iframe></span></div></div></div>  '
-  document.getElementById("sidebarBtn").innerHTML = '<a class="a" onclick="deactivateSideBar(), openlummenu()">Deactivate Side Bar</a>'
+  document.getElementById("sidebarBtn").innerHTML = '<a class="a" onclick="deactivateSideBar(), openlummenu(),loadEditor()">Deactivate Side Bar</a>'
 
   
 
@@ -234,7 +234,7 @@ function activateSideBar(){
 function deactivateSideBar(){
   document.getElementById("editor").innerHTML = '<div class="m-container-editor"><div><textarea onkeyup="updateLFile();" name="" id="textEditor" cols="75" rows="15" width="100%" autocorrect="off" placeholder="Hello World"></textarea></div></div>'
 
-  document.getElementById("sidebarBtn").innerHTML = '<a class="a" onclick="activateSideBar(), openlummenu()">Activate Side Bar</a>'
+  document.getElementById("sidebarBtn").innerHTML = '<a class="a" onclick="activateSideBar(), openlummenu(),loadEditor()">Activate Side Bar</a>'
 
 }
 
@@ -281,7 +281,7 @@ function sidebarSetSrc(){
    }
 
    function versionID(){
-    cv = 'Alpha 1.3.9'
+    cv = 'Alpha 1.3.10'
     document.getElementById("versionID").innerHTML = cv
   }
 
@@ -289,8 +289,11 @@ function sidebarSetSrc(){
 ===
 Change log: Alpha 1.3.3 and on
 ===
+Alpha 1.3.10
+   ~Side bar bug fix
 
-Alpha 1.3.8
+
+Alpha 1.3.9
    ~Side bar bug fix
 
 Alpha 1.3.8
