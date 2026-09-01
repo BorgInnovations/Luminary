@@ -226,6 +226,7 @@ function activateSideBar(){
   document.getElementById("editor").innerHTML = '<div class="m-container-editor"><div class="cols-2"><div><textarea onkeyup="updateLFile();" name="" id="textEditor" cols="75" rows="15" width="100%;" style="height: 300px;margin: 0px;" autocorrect="off" placeholder="Hello World!"></textarea></div><div><span id="sidebarembed"><iframe src="./source/sidebar.html" id="sidebar" class="card" style="width: 90%; height: 300px; margin: 0px;" frameborder="0" sandbox="allow-scripts"></iframe></span></div></div></div>  '
   document.getElementById("sidebarBtn").innerHTML = '<a class="a" onclick="deactivateSideBar(), openlummenu()">Deactivate Side Bar</a>'
 
+  
 
 }
 
